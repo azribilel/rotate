@@ -116,7 +116,7 @@ filename over 3 months old:
 ```sh
 use studio24\Rotate\Delete;
 
-$rotate = new Delete('path/to/logs/orders.YYYYMMDD.log');
+$rotate = new Delete('path/to/logs/orders.{YYYYMMDD}.log');
 $deletedFiles = $rotate->deleteByFilenameTime('3 months');
 ```
 
